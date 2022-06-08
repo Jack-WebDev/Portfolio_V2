@@ -1,0 +1,34 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Genos:ital@1&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+html {
+  scroll-padding-top: var(--scroll-padding, 100px);
+}
+
+:root {
+  --primaryColor: #1d5c96;
+  --header: #12395d;
+  --secondary: #7db0de;
+  --defaultColor: #f0f8ff;
+  --numberColor: #00ffff;
+
+  --transition: 500ms ease;
+}
+
+body {
+  background-color: var(--secondary);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  max-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}

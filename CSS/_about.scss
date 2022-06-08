@@ -1,0 +1,377 @@
+@use "./variables" as *;
+
+.about {
+  margin: 7em 0;
+  padding: 8em 2em 0 2em;
+  text-align: center;
+
+  .about__me {
+    h2 {
+      padding: 10px 0;
+      font-family: 'Genos', sans-serif;
+      font-weight: 300;
+      color: var(--header);
+      font-size: 35px;
+
+      span {
+        padding-right: 10px;
+        font-size: 0.8em;
+        color: var(--primaryColor);
+      }
+    }
+
+    p {
+      padding-bottom: 10px;
+      line-height: 1.5;
+      color: var(--defaultColor);
+      font-size: 18px;
+    }
+  }
+
+  .skills {
+    padding-top: 3em;
+
+    h2 {
+      color: var(--header);
+      padding: 10px 0 20px;
+      font-weight: 500;
+      font-family: 'Genos', sans-serif;
+      font-size: 25px;
+    }
+
+    p {
+      color: var(--defaultColor);
+      font-family: 'Genos', sans-serif;
+    }
+
+    .toolbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 100px;
+      margin-top: 5em;
+
+      svg {
+        width: 15%;
+        filter: var(--invert);
+      }
+
+      .tailwind {
+        width: 15%;
+        filter: var(--invert);
+        position: relative;
+        top: -55px;
+        left: 50px;
+      }
+
+      .jquery {
+        width: 40%;
+        filter: var(--invert);
+        position: relative;
+        top: -60px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .about {
+  
+    .skills {
+  
+      .toolbox {
+  
+        .tailwind {
+          width: 15%;
+          filter: var(--invert);
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    margin: 7em 0;
+    padding: 8em 2em;
+    text-align: center;
+
+    .about__me {
+      h2 {
+        padding: 10px 0;
+        font-weight: 300;
+        font-size: 40px;
+        color: var(--primaryColor);
+
+        span {
+          padding-right: 10px;
+          font-size: 0.8em;
+          color: var(--primaryColor);
+        }
+      }
+
+      p {
+        padding: 0 50px 10px;
+        line-height: 1.5;
+        font-size: 20px;
+      }
+    }
+
+    .skills {
+      padding: 3em 3em 0;
+
+      h2 {
+        color: var(--primaryColor);
+        padding: 10px 0 20px;
+        font-weight: 300;
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .toolbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin-top: 5em;
+
+        svg {
+          width: 10%;
+          filter: var(--invert);
+        }
+
+        .jquery {
+          width: 25%;
+          filter: var(--invert);
+          position: relative;
+          top: 0;
+        }
+
+        .tailwind {
+          width: 10%;
+          filter: var(--invert);
+          position: unset;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    margin: 7em 0;
+    padding: 8em 2em 0;
+    text-align: center;
+
+    .about__me {
+      h2 {
+        padding: 10px 0;
+        font-weight: 300;
+        font-size: 40px;
+        color: var(--primaryColor);
+
+        span {
+          padding-right: 10px;
+          font-size: 0.8em;
+          color: var(--primaryColor);
+        }
+      }
+
+      p {
+        padding: 0 50px 10px;
+        line-height: 1.5;
+        font-size: 20px;
+      }
+    }
+
+    .skills {
+      padding-top: 3em;
+
+      h2 {
+        color: var(--primaryColor);
+        padding: 10px 0 20px;
+        font-weight: 300;
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .toolbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin-top: 5em;
+        margin-bottom: 3em;
+
+        svg {
+          width: 8%;
+          filter: var(--invert);
+        }
+
+        .jquery {
+          width: 15%;
+          filter: var(--invert);
+          position: relative;
+          top: 0;
+        }
+
+        .tailwind {
+          width: 10%;
+          filter: var(--invert);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .about {
+    margin: 7em 0;
+    padding: 8em 2em 0 2em;
+    text-align: center;
+
+    .about__me {
+      h2 {
+        padding: 10px 0;
+        font-weight: 300;
+        font-size: 40px;
+        color: var(--primaryColor);
+
+        span {
+          padding-right: 10px;
+          font-size: 0.8em;
+          color: var(--primaryColor);
+        }
+      }
+
+      p {
+        padding: 0 50px 10px;
+        line-height: 1.5;
+        font-size: 20px;
+      }
+    }
+
+    .skills {
+      padding-top: 3em;
+
+      h2 {
+        color: var(--primaryColor);
+        padding: 10px 0 20px;
+        font-weight: 300;
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .toolbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin-top: 5em;
+        margin-bottom: 1em;
+
+        svg {
+          width: 6%;
+          filter: var(--invert);
+        }
+
+        .jquery {
+          width: 15%;
+          filter: var(--invert);
+          position: relative;
+          top: 0;
+        }
+
+        .tailwind {
+          width: 7%;
+          filter: var(--invert);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .about {
+    margin: 7em 0;
+    padding: 8em 2em 0 2em;
+    text-align: center;
+
+    .about__me {
+      h2 {
+        padding: 10px 0;
+        font-weight: 300;
+        font-size: 40px;
+        color: var(--primaryColor);
+
+        span {
+          padding-right: 10px;
+          font-size: 0.8em;
+          color: var(--primaryColor);
+        }
+      }
+
+      p {
+        padding: 0 50px 10px;
+        line-height: 1.5;
+        font-size: 20px;
+      }
+    }
+
+    .skills {
+      padding-top: 3em;
+
+      h2 {
+        color: var(--primaryColor);
+        padding: 10px 0 20px;
+        font-weight: 300;
+        font-size: 2em;
+      }
+
+      .toolbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin-top: 5em;
+
+        svg {
+          width: 6%;
+          filter: var(--invert);
+        }
+
+        .jquery {
+          width: 15%;
+          filter: var(--invert);
+          position: relative;
+          top: 0;
+        }
+
+        .tailwind {
+          width: 7%;
+          filter: var(--invert);
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}

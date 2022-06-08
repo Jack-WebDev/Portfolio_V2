@@ -1,0 +1,343 @@
+
+@use "./variables" as *;
+
+.header {
+  padding: 1em 2em;
+  background-color: var(--primaryColor);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+
+  .navbar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      text-decoration: none;
+      color: var(--defaultColor);
+      font-family: 'Genos', sans-serif;
+
+      .j {
+        font-size: 3em;
+        font-family: "Vujahday Script", cursive;
+        font-weight: 600;
+      }
+      .j:hover {
+        color: var(--numberColor);
+      }
+      .w {
+        font-size: 3em;
+        font-family: "Vujahday Script", cursive;
+        font-weight: 600;
+      }
+      .w:hover {
+        color: var(--numberColor);
+      }
+    }
+
+    .hamburger {
+      cursor: pointer;
+
+      .bar {
+        width: 30px;
+        height: 2px;
+        margin-top: 5px;
+        background-color: var(--numberColor);
+      }
+      .bar:nth-child(2) {
+        transform: translateX(7px);
+      }
+      .bar:nth-child(3) {
+          transform: translateX(14px);
+      }
+    }
+
+    .nav__menu {
+      display: none;
+    }
+
+    .resume {
+      display: none;
+    }
+  }
+}
+
+.modal {
+  border: none;
+  margin: auto;
+  padding: 0;
+  max-width: 100%;
+  width: 70%;
+  min-height: 100%;
+  height: 100%;
+  background-image: url(../Assets/vladislav-klapin-SymZoeE8quA-unsplash.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 30%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  .modal__content {
+    display: grid;
+    grid-template-rows: 1fr;
+    place-content: center;
+    padding: 2em;
+    height: 100%;
+    background: rgb(0 0 0 / 0.7);
+    position: relative;
+
+    .close-icon {
+      position: absolute;
+      right: 35px;
+      top: 42px;
+      cursor: pointer;
+
+      .bar {
+        width: 30px;
+        height: 2px;
+        margin-top: 5px;
+        background: #fff;
+      }
+
+      .bar:nth-child(1) {
+        transform: rotate(-45deg) translateY(5px);
+      }
+
+      .bar:nth-child(2) {
+        transform: rotate(45deg) translateY(-5px);
+      }
+    }
+
+    .nav__menu {
+      display: grid;
+      align-items: center;
+      height: fit-content;
+      transform: translateY(100px);
+      gap: 20px;
+      font-family: 'Genos', sans-serif;
+
+      .nav__item {
+        display: flex;
+        align-items: baseline;
+        gap: 5px;
+
+        .number {
+          color: var(--numberColor);
+        }
+        .nav__link {
+          color: #fff;
+          font-size: 30px;
+          text-decoration: none;
+          position: relative;
+        }
+        .nav__link:focus-visible {
+          outline: none;
+        }
+        .nav__link::after {
+          content: "";
+          width: 100%;
+          height: 2px;
+          background-color: var(--numberColor);
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          transform: scaleX(0);
+          transition: transform 500ms ease;
+          transform-origin: left;
+        }
+      }
+
+      .nav__item:hover .nav__link::after {
+        transform: scaleX(1);
+      }
+    }
+
+    .resume {
+      border: 1px solid cyan;
+      border-radius: 1em;
+      padding: 10px 20px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: var(--transition);
+      width: fit-content;
+      height: fit-content;
+      color: var(--defaultColor);
+      transform: scale(1);
+      font-family: 'Genos', sans-serif;
+    }
+    .resume:hover {
+      background-color: rgb(0 0 0 / 0.3);
+      border: none;
+      transform: scale(1.5);
+    }
+    .resume:hover,
+    .resume:focus {
+      color: var(--numberColor);
+    }
+  }
+}
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.7);
+}
+.modal[open] {
+  animation: slide-in 500ms both;
+}
+.modal[open]::backdrop {
+  opacity: 1;
+}
+
+.fade-in {
+  animation: fade-in 2000ms forwards;
+}
+.fade-in::backdrop {
+  animation: fade-in 500ms forwards;
+}
+
+.fade-out {
+  animation: fade-out 500ms forwards;
+}
+.fade-out::backdrop {
+  animation: fade-out 300ms forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(40%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 1em 2em;
+    background-color: var(--primaryColor);
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      position: relative;
+
+
+      .hamburger {
+        display: none;
+        cursor: pointer;
+
+      }
+
+      .nav__menu {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .nav__item {
+          display: flex;
+          align-items: baseline;
+          gap: 5px;
+
+          .number {
+            color: var(--numberColor);
+          }
+          .nav__link {
+            font-size: 25px;
+            font-family: 'Genos', sans-serif;
+            text-decoration: none;
+            transition: var(--transition);
+            color: var(--defaultColor);
+          }
+          .nav__link:hover {
+            color: var(--numberColor);
+          }
+
+        }
+      }
+
+      .resume {
+        display: inline-block;
+        border: 1px solid cyan;
+        border-radius: 1em;
+        padding: 10px 20px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: var(--transition);
+        transform: scale(1);
+        color: var(--defaultColor);
+        font-family: 'Genos', sans-serif;
+        font-size: 18px;
+        position: absolute;
+        right: 0;
+      }
+      .resume:hover {
+        background-color: rgb(0 0 0 / 0.3);
+        border: none;
+        transform: scale(1.1);
+      }
+      .resume:hover,
+      .resume:focus {
+        color: cyan;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+
+    .navbar {
+      gap: 10%;
+
+      .nav__menu {
+        gap: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .header {
+
+    .navbar {
+      gap: 10%;
+
+      .nav__menu {
+        gap: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .header {
+
+    .navbar {
+      gap: 20%;
+    }
+  }
+}
