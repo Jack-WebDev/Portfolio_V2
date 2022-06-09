@@ -187,8 +187,10 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   color: var(--defaultColor);
-  transform: scale(1);
+  transform: scale(1.3);
   font-family: "Genos", sans-serif;
+  position: relative;
+  left: 20%;
 }
 .modal .modal__content .resume:hover {
   background-color: rgba(0, 0, 0, 0.3);
@@ -306,6 +308,13 @@ body {
     opacity: 0;
   }
 }
+@media screen and (min-width: 425px) {
+  .modal {
+    max-width: 100%;
+    width: 60%;
+    left: 40%;
+  }
+}
 @media screen and (min-width: 768px) {
   .header {
     padding: 1em 2em;
@@ -325,6 +334,7 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-left: 2em;
   }
   .header .navbar .nav__menu .nav__item {
     display: flex;
@@ -335,7 +345,7 @@ body {
     color: var(--numberColor);
   }
   .header .navbar .nav__menu .nav__item .nav__link {
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Genos", sans-serif;
     text-decoration: none;
     transition: var(--transition);
@@ -494,7 +504,7 @@ body {
   }
 }
 .about {
-  margin: 7em 0;
+  margin: 7em 0 0;
   padding: 8em 2em 0 2em;
   text-align: center;
 }
@@ -567,7 +577,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .about {
-    margin: 7em 0;
     padding: 8em 2em;
     text-align: center;
   }
@@ -575,7 +584,7 @@ body {
     padding: 10px 0;
     font-weight: 300;
     font-size: 40px;
-    color: var(--primaryColor);
+    color: var(--header);
   }
   .about .about__me h2 span {
     padding-right: 10px;
@@ -625,7 +634,6 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .about {
-    margin: 7em 0;
     padding: 8em 2em 0;
     text-align: center;
   }
@@ -633,7 +641,6 @@ body {
     padding: 10px 0;
     font-weight: 300;
     font-size: 40px;
-    color: var(--primaryColor);
   }
   .about .about__me h2 span {
     padding-right: 10px;
@@ -683,7 +690,6 @@ body {
 }
 @media screen and (min-width: 1100px) {
   .about {
-    margin: 7em 0;
     padding: 8em 2em 0 2em;
     text-align: center;
   }
@@ -691,7 +697,6 @@ body {
     padding: 10px 0;
     font-weight: 300;
     font-size: 40px;
-    color: var(--primaryColor);
   }
   .about .about__me h2 span {
     padding-right: 10px;
@@ -741,7 +746,6 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .about {
-    margin: 7em 0;
     padding: 8em 2em 0 2em;
     text-align: center;
   }
@@ -749,7 +753,6 @@ body {
     padding: 10px 0;
     font-weight: 300;
     font-size: 40px;
-    color: var(--primaryColor);
   }
   .about .about__me h2 span {
     padding-right: 10px;
@@ -886,7 +889,7 @@ body {
   }
   .work h2 {
     text-align: center;
-    color: var(--primaryColor);
+    color: var(--header);
     font-weight: 300;
     font-size: 40px;
     padding-bottom: 1em;
@@ -1106,7 +1109,6 @@ body {
   }
   .work h2 {
     text-align: center;
-    color: var(--primaryColor);
     font-weight: 300;
     font-size: 40px;
     padding-bottom: 1em;
@@ -1232,7 +1234,6 @@ body {
   }
   .work h2 {
     text-align: center;
-    color: var(--primaryColor);
     font-weight: 300;
     font-size: 40px;
     padding: 2em 0 1em;

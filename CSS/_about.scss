@@ -1,7 +1,7 @@
 @use "./variables" as *;
 
 .about {
-  margin: 7em 0;
+  margin: 7em 0 0;
   padding: 8em 2em 0 2em;
   text-align: center;
 
@@ -96,7 +96,6 @@
 
 @media screen and (min-width: 768px) {
   .about {
-    margin: 7em 0;
     padding: 8em 2em;
     text-align: center;
 
@@ -105,7 +104,7 @@
         padding: 10px 0;
         font-weight: 300;
         font-size: 40px;
-        color: var(--primaryColor);
+        color: var(--header);
 
         span {
           padding-right: 10px;
@@ -167,7 +166,6 @@
 
 @media screen and (min-width: 1024px) {
   .about {
-    margin: 7em 0;
     padding: 8em 2em 0;
     text-align: center;
 
@@ -176,7 +174,6 @@
         padding: 10px 0;
         font-weight: 300;
         font-size: 40px;
-        color: var(--primaryColor);
 
         span {
           padding-right: 10px;
@@ -238,7 +235,6 @@
 
 @media screen and (min-width: 1100px) {
   .about {
-    margin: 7em 0;
     padding: 8em 2em 0 2em;
     text-align: center;
 
@@ -247,7 +243,6 @@
         padding: 10px 0;
         font-weight: 300;
         font-size: 40px;
-        color: var(--primaryColor);
 
         span {
           padding-right: 10px;
@@ -309,7 +304,6 @@
 
 @media screen and (min-width: 1300px) {
   .about {
-    margin: 7em 0;
     padding: 8em 2em 0 2em;
     text-align: center;
 
@@ -318,7 +312,6 @@
         padding: 10px 0;
         font-weight: 300;
         font-size: 40px;
-        color: var(--primaryColor);
 
         span {
           padding-right: 10px;
