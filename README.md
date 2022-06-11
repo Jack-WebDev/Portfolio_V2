@@ -8,16 +8,9 @@ I will keep updating it with other projects I do from #FrontEndMentor and my fre
 
 ## Table of Contents
 
-- [Links](#links)
 - [My Process](#my-process)
   - [Built With](#built-with)
 - [Author](#author)
-
-### Links
-
-- Solution URL: []
-
-- Live Site URL: []
 
 ## My Process
 
