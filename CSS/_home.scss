@@ -8,15 +8,16 @@
 
   .alert {
     position: top;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: white;
-    padding: 10px;
+    padding: 1px 0;
     width: 100%;
     text-align: center;
     font-weight: 900;
     color: var(--header);
+    z-index: 10;
   }
 
   h1 {
@@ -75,10 +76,11 @@
     padding: 10em 0 0;
 
     .alert {
-      top: 95px;
+      top: 0;
+      z-index: 2;
   
     }
-    
+
     h1 {
       font-size: 4em;
     }
