@@ -147,6 +147,7 @@
   .header {
     padding: 1em 2em;
     background-color: var(--primaryColor);
+    position: fixed;
 
     .navbar {
       display: flex;
@@ -173,7 +174,7 @@
             display: none;
           }
           .nav__link {
-            font-size: 17px;
+            font-size: 20px;
             font-family: 'Genos', sans-serif;
             text-decoration: none;
             transition: var(--transition);
@@ -234,7 +235,7 @@
             display: inline-block;
           }
           .nav__link {
-            font-size: 18px;
+            font-size: 20px;
           }
 
         }
@@ -259,7 +260,7 @@
             display: inline-block;
           }
           .nav__link {
-            font-size: 20px;
+            font-size: 25px;
           }
 
         }

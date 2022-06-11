@@ -164,6 +164,7 @@ body {
   .header {
     padding: 1em 2em;
     background-color: var(--primaryColor);
+    position: fixed;
   }
   .header .navbar {
     display: flex;
@@ -189,7 +190,7 @@ body {
     display: none;
   }
   .header .navbar .nav__menu .nav__item .nav__link {
-    font-size: 17px;
+    font-size: 20px;
     font-family: "Genos", sans-serif;
     text-decoration: none;
     transition: var(--transition);
@@ -239,7 +240,7 @@ body {
     display: inline-block;
   }
   .header .navbar .nav__menu .nav__item .nav__link {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -254,7 +255,7 @@ body {
     display: inline-block;
   }
   .header .navbar .nav__menu .nav__item .nav__link {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 .home {
