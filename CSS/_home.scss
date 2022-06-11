@@ -4,6 +4,20 @@
   margin: 0 auto 2em;
   padding: 5em 1em 0;
   text-align: center;
+  position: relative;
+
+  .alert {
+    position: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    color: var(--header);
+  }
 
   h1 {
     margin-bottom: 0.1em;
@@ -56,9 +70,15 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .home {
     padding: 10em 0 0;
 
+    .alert {
+      top: 95px;
+  
+    }
+    
     h1 {
       font-size: 4em;
     }

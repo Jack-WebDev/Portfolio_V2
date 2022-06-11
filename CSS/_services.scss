@@ -1,0 +1,206 @@
+@use "./variables" as *;
+
+.services {
+  margin: 7em 0 0;
+  padding: 8em 2em 0 2em;
+  text-align: center;
+
+  .my__services {
+
+    h2 {
+      padding: 10px 0;
+      font-family: 'Genos', sans-serif;
+      font-weight: 300;
+      color: var(--header);
+      font-size: 35px;
+
+      span {
+        padding-right: 10px;
+        font-size: 0.8em;
+        color: var(--primaryColor);
+      }
+    }
+
+    p {
+      padding-bottom: 10px;
+      line-height: 1.5;
+      color: var(--defaultColor);
+      font-size: 18px;
+    }
+
+    .design {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2em 0 0;
+
+      .design_icon {
+        width: 12em;
+        margin: 2em 0 1em;
+
+      }
+
+      h3 {
+        margin: 1em 0;
+        color: var(--primaryColor);
+        letter-spacing: 2px;
+      }
+
+      p {
+        font-family: 'Genos', sans-serif;
+        padding: .7em 0 1em;
+        max-width: 80vw;
+      }
+
+      .design__btn {
+        margin-top: 1.5em;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: var(--primaryColor);
+        color: var(--defaultColor);
+        transform: scale(1);
+        transition: transform 500ms ease;
+        cursor: pointer;
+      }
+      .design__btn:hover {
+        transform: scale(1.3);
+      }
+    }
+
+    .web__design {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 4em 0 0;
+
+      .webDesign_icon {
+        width: 12em;
+        margin: 2em 0 1em;
+
+      }
+
+      h3 {
+        margin: 1em 0;
+        color: var(--primaryColor);
+        letter-spacing: 2px;
+      }
+
+      p {
+        font-family: 'Genos', sans-serif;
+        padding: .7em 0 1em;
+        max-width: 80vw;
+      }
+
+      .web-design__btn {
+        margin-top: 1.5em;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: var(--primaryColor);
+        color: var(--defaultColor);
+        transform: scale(1);
+        transition: transform 500ms ease;
+        cursor: pointer;
+      }
+      .web-design__btn:hover {
+        transform: scale(1.3);
+      }
+    }
+
+    .online__marketing {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 4em 0 0;
+
+      .marketing_icon {
+        width: 12em;
+        margin: 2em 0 1em;
+
+      }
+
+      h3 {
+        margin: 1em 0;
+        color: var(--primaryColor);
+        letter-spacing: 2px;
+      }
+
+      p {
+        font-family: 'Genos', sans-serif;
+        padding: .7em 0 1em;
+        max-width: 80vw;
+      }
+
+      .marketing__btn {
+        margin-top: 1.5em;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: var(--primaryColor);
+        color: var(--defaultColor);
+        transform: scale(1);
+        transition: transform 500ms ease;
+        cursor: pointer;
+      }
+      .marketing__btn:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+
+
+}
+
+@media screen and (min-width: 768px) {
+  .services {
+    margin: 7em 0 0;
+    padding: 8em 2em 0 2em;
+    text-align: center;
+  
+    .my__services {
+  
+      h2 {
+        padding: 10px 0;
+        font-family: 'Genos', sans-serif;
+        font-weight: 300;
+        color: var(--header);
+        font-size: 35px;
+  
+        span {
+          padding-right: 10px;
+          font-size: 0.8em;
+          color: var(--primaryColor);
+        }
+      }
+  
+      p {
+        padding-bottom: 10px;
+        line-height: 1.5;
+        color: var(--defaultColor);
+        font-size: 18px;
+      }
+  
+      .design {
+  
+        p {
+          max-width: 50vw;
+        }
+      }
+  
+      .web__design {
+  
+        p {
+          max-width: 50vw;
+        }
+      }
+  
+      .online__marketing {
+  
+        p {
+          max-width: 50vw;
+        }
+  
+      }
+    }
+  
+  
+  }
+}
