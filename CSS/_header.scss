@@ -4,7 +4,6 @@
 .header {
   padding: 1em 2em;
   background-color: var(--primaryColor);
-  position: fixed;
   z-index: 1;
   width: 100%;
 
@@ -58,190 +57,90 @@
     .nav__menu {
       display: none;
     }
-
-    .resume {
-      display: none;
-    }
   }
 }
 
 .modal {
-  border: none;
-  margin: auto;
-  padding: 0;
-  max-width: 100%;
-  width: 70%;
-  min-height: 100%;
-  height: 100%;
-  background-image: url(../Assets/vladislav-klapin-SymZoeE8quA-unsplash.jpeg);
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0 0 0 / 0.8);
+  min-height: 100vh;
+  width: 100%;
   position: absolute;
-  left: 30%;
   top: 0;
-  right: 0;
-  bottom: 0;
+  transform: translateY(-100%);
+  transition: transform 800ms ease;
 
-  .modal__content {
+  .close-icon {
+    position: absolute;
+    right: 25px;
+    top: 50px;  
+    cursor: pointer;
+
+    .bar {
+      width: 30px;
+      height: 3px;
+      margin-top: 5px;
+      background-color: var(--numberColor);
+    }
+
+    .bar:nth-child(1) {
+      transform: rotate(-45deg) translateY(5px);
+    }
+
+    .bar:nth-child(2) {
+      transform: rotate(45deg) translateY(-5px);
+    }
+  }
+
+  .nav__menu {
     display: grid;
-    grid-template-rows: 1fr;
-    place-content: center;
-    padding: 2em;
-    height: 100%;
-    background: rgb(0 0 0 / 0.7);
-    position: relative;
+    align-items: center;
+    height: fit-content;
+    gap: 50px;
+    font-family: 'Genos', sans-serif;
 
-    .close-icon {
-      position: absolute;
-      right: 35px;
-      top: 42px;
-      cursor: pointer;
+    .nav__item {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
 
-      .bar {
-        width: 30px;
+      .number {
+        color: var(--numberColor);
+      }
+      .nav__link {
+        color: #fff;
+        font-size: 30px;
+        text-decoration: none;
+        position: relative;
+      }
+      .nav__link:focus-visible {
+        outline: none;
+      }
+      .nav__link::after {
+        content: "";
+        width: 100%;
         height: 2px;
-        margin-top: 5px;
-        background: #fff;
-      }
-
-      .bar:nth-child(1) {
-        transform: rotate(-45deg) translateY(5px);
-      }
-
-      .bar:nth-child(2) {
-        transform: rotate(45deg) translateY(-5px);
+        background-color: var(--numberColor);
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        transform: scaleX(0);
+        transition: transform 500ms ease;
+        transform-origin: left;
       }
     }
 
-    .nav__menu {
-      display: grid;
-      align-items: center;
-      height: fit-content;
-      transform: translateY(100px);
-      gap: 20px;
-      font-family: 'Genos', sans-serif;
-
-      .nav__item {
-        display: flex;
-        align-items: baseline;
-        gap: 5px;
-
-        .number {
-          color: var(--numberColor);
-        }
-        .nav__link {
-          color: #fff;
-          font-size: 30px;
-          text-decoration: none;
-          position: relative;
-        }
-        .nav__link:focus-visible {
-          outline: none;
-        }
-        .nav__link::after {
-          content: "";
-          width: 100%;
-          height: 2px;
-          background-color: var(--numberColor);
-          position: absolute;
-          bottom: -5px;
-          left: 0;
-          transform: scaleX(0);
-          transition: transform 500ms ease;
-          transform-origin: left;
-        }
-      }
-
-      .nav__item:hover .nav__link::after {
-        transform: scaleX(1);
-      }
-    }
-
-    .resume {
-      border: 1px solid cyan;
-      border-radius: 1em;
-      padding: 10px 20px;
-      text-decoration: none;
-      cursor: pointer;
-      transition: var(--transition);
-      width: fit-content;
-      height: fit-content;
-      color: var(--defaultColor);
-      transform: scale(1.3);
-      font-family: 'Genos', sans-serif;
-      position: relative;
-      left: 20%;
-    }
-    .resume:hover {
-      background-color: rgb(0 0 0 / 0.3);
-      border: none;
-      transform: scale(1.5);
-    }
-    .resume:hover,
-    .resume:focus {
-      color: var(--numberColor);
+    .nav__item:hover .nav__link::after {
+      transform: scaleX(1);
     }
   }
 }
-.modal::backdrop {
-  background: rgb(0 0 0 / 0.7);
-}
-.modal[open] {
-  animation: slide-in 500ms both;
-}
-.modal[open]::backdrop {
-  opacity: 1;
-}
 
-.fade-in {
-  animation: fade-in 2000ms forwards;
-}
-.fade-in::backdrop {
-  animation: fade-in 500ms forwards;
-}
-
-.fade-out {
-  animation: fade-out 500ms forwards;
-}
-.fade-out::backdrop {
-  animation: fade-out 300ms forwards;
-}
-
-@keyframes slide-in {
-  0% {
-    transform: translateX(40%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@media screen and (min-width: 425px) {
-  .modal {
-    max-width: 100%;
-    width: 60%;
-    left: 40%;
-  }
+.modal.active {
+  transform: translateY(0%);
 }
 
 @media screen and (min-width: 768px) {
@@ -252,14 +151,11 @@
     .navbar {
       display: flex;
       align-items: center;
-      justify-content: left;
+      justify-content: space-between;
       position: relative;
-
 
       .hamburger {
         display: none;
-        cursor: pointer;
-
       }
 
       .nav__menu {
@@ -274,10 +170,10 @@
           gap: 5px;
 
           .number {
-            color: var(--numberColor);
+            display: none;
           }
           .nav__link {
-            font-size: 20px;
+            font-size: 17px;
             font-family: 'Genos', sans-serif;
             text-decoration: none;
             transition: var(--transition);
@@ -316,6 +212,10 @@
       }
     }
   }
+
+  .modal {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -326,6 +226,18 @@
 
       .nav__menu {
         gap: 30px;
+
+        .nav__item {
+
+          .number {
+            color: var(--numberColor);
+            display: inline-block;
+          }
+          .nav__link {
+            font-size: 18px;
+          }
+
+        }
       }
     }
   }
@@ -338,17 +250,20 @@
       gap: 10%;
 
       .nav__menu {
-        gap: 50px;
+        gap: 30px;
+
+        .nav__item {
+
+          .number {
+            color: var(--numberColor);
+            display: inline-block;
+          }
+          .nav__link {
+            font-size: 20px;
+          }
+
+        }
       }
-    }
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .header {
-
-    .navbar {
-      gap: 20%;
     }
   }
 }
