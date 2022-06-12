@@ -141,19 +141,20 @@ html {
   color: var(--defaultColor);
   font-family: "Genos", sans-serif;
 }
-.terms__service .design__content-container .view__work {
-  position: absolute;
-  left: 35%;
-  bottom: -80px;
-  text-decoration: none;
-  background-color: var(--header);
-  color: var(--defaultColor);
-  padding: 10px 20px;
+
+.VieWork {
+  display: grid;
+  place-items: center;
+  gap: 80px;
+}
+.VieWork img {
+  width: 50%;
   border-radius: 5px;
   transform: scale(1);
-  transition: transform 500ms ease;
+  transition: transform 500ms ease-in-out;
+  cursor: pointer;
 }
-.terms__service .design__content-container .view__work:hover {
+.VieWork img:hover {
   transform: scale(1.3);
 }
 
@@ -226,11 +227,6 @@ footer .details .attribution .signed {
   .terms__service .design__content-container .design__content .design__list .design__items {
     font-size: 20px;
   }
-  .terms__service .design__content-container .view__work {
-    position: absolute;
-    left: 42%;
-    bottom: -120px;
-  }
 }
 @media screen and (min-width: 1024px) {
   .terms__service .bg-image {
@@ -254,11 +250,6 @@ footer .details .attribution .signed {
   .terms__service .design__content-container .design__content p {
     font-size: 20px;
     text-align: start;
-  }
-  .terms__service .design__content-container .view__work {
-    position: absolute;
-    left: 42%;
-    bottom: -120px;
   }
 }
 @media screen and (min-width: 1300px) {
