@@ -375,13 +375,16 @@ body {
   padding-bottom: 10px;
   line-height: 1.5;
   color: var(--defaultColor);
-  font-size: 18px;
+  font-size: 19px;
 }
 .services .my__services .design {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2em 0 0;
+  border: 1px solid var(--header);
+  padding: 0 0 3em;
+  border-radius: 10px;
 }
 .services .my__services .design .design_icon {
   width: 12em;
@@ -405,6 +408,7 @@ body {
   color: var(--defaultColor);
   transform: scale(1);
   transition: transform 500ms ease;
+  text-decoration: none;
   cursor: pointer;
 }
 .services .my__services .design .design__btn:hover {
@@ -415,6 +419,9 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 4em 0 0;
+  border: 1px solid var(--header);
+  padding: 0 0 3em;
+  border-radius: 10px;
 }
 .services .my__services .web__design .webDesign_icon {
   width: 12em;
@@ -438,6 +445,7 @@ body {
   color: var(--defaultColor);
   transform: scale(1);
   transition: transform 500ms ease;
+  text-decoration: none;
   cursor: pointer;
 }
 .services .my__services .web__design .web-design__btn:hover {
@@ -448,6 +456,9 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 4em 0 0;
+  border: 1px solid var(--header);
+  padding: 0 0 3em;
+  border-radius: 10px;
 }
 .services .my__services .online__marketing .marketing_icon {
   width: 12em;
@@ -471,6 +482,7 @@ body {
   color: var(--defaultColor);
   transform: scale(1);
   transition: transform 500ms ease;
+  text-decoration: none;
   cursor: pointer;
 }
 .services .my__services .online__marketing .marketing__btn:hover {
@@ -499,16 +511,39 @@ body {
     padding-bottom: 10px;
     line-height: 1.5;
     color: var(--defaultColor);
-    font-size: 18px;
+    font-size: 25px;
+  }
+  .services .my__services .design {
+    border: 0;
+    padding: 0;
   }
   .services .my__services .design p {
-    max-width: 50vw;
+    max-width: 80vw;
+  }
+  .services .my__services .web__design {
+    border: 0;
+    padding: 0;
   }
   .services .my__services .web__design p {
-    max-width: 50vw;
+    max-width: 80vw;
+  }
+  .services .my__services .online__marketing {
+    border: 0;
+    padding: 0;
   }
   .services .my__services .online__marketing p {
-    max-width: 50vw;
+    max-width: 80vw;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .services .my__services .design p {
+    max-width: 60vw;
+  }
+  .services .my__services .web__design p {
+    max-width: 60vw;
+  }
+  .services .my__services .online__marketing p {
+    max-width: 60vw;
   }
 }
 .work {
