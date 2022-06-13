@@ -634,7 +634,7 @@ body {
 .work .more__projects .main__control .projects__container {
   display: none;
   place-items: center;
-  margin: 7rem 0 0;
+  margin: 3rem 5em 0;
   height: 100vh;
   overflow: auto;
   transition: height 500ms ease;
@@ -709,7 +709,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-top: 1em;
+  margin: 1em;
   font-family: "Genos", sans-serif;
 }
 .work .more__projects .main__control .projects__container .more__web .web__content .item_1 .btns .live, .work .more__projects .main__control .projects__container .more__web .web__content .item_2 .btns .live,
@@ -1776,7 +1776,7 @@ footer .attribution p .signed:hover {
 .terms__service .bg-image__web {
   display: grid;
   place-items: center;
-  background-image: url(../Assets/webdev.jpeg);
+  background-image: url(../Assets/webdev-min.jpeg);
   width: 100%;
   height: 50vh;
   background-position: center;
