@@ -2,6 +2,8 @@ const hamburger = document.querySelector(".hamburger");
 const modal = document.getElementById("modal");
 const closeIcon = document.querySelector(".close-icon");
 const body = document.querySelector("body");
+const btnMore = document.querySelector(".btn__more");
+const moreItems = document.querySelector(".projects__container");
 
 const headerHeight = document.querySelector(".header").offsetHeight;
 
@@ -26,4 +28,8 @@ hamburger.addEventListener("click", () => {
 closeIcon.addEventListener("click", () => {
   modal.classList.remove("active");
   hamburger.style.display = "inline-block";
+});
+
+btnMore.addEventListener("click", () => {
+  moreItems.classList.toggle("active");
 });
