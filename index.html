@@ -15,21 +15,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon.png"/>
     <link rel="stylesheet" href="CSS/style.css" />
     <script defer src="JS/index.js"></script>
-    <script src="JS/jquery-3.6.0.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(document).on("click", 'a[href^="#"]', function (event) {
-          event.preventDefault();
-
-          $("html, body").animate(
-            {
-              scrollTop: $($.attr(this, "href")).offset().top,
-            },
-            500
-          );
-        });
-      });
-    </script>
     <title>Jack WebDev | Design, Online Marketing & Website Development</title>
   </head>
   <body>
@@ -51,7 +36,7 @@
             <span class="number">1.</span><a href="#services" class="nav__link">Services</a>
           </li>
           <li class="nav__item work_item">
-            <span class="number">2.</span><a href="work.html" class="nav__link" target="_blank">My Work</a>
+            <span class="number">2.</span><a href="#work" class="nav__link">My Work</a>
           </li>
           <li class="nav__item design_item">
             <span class="number">3.</span><a href="Design.html" class="nav__link" target="_blank">Design</a>
@@ -67,7 +52,6 @@
     </header>
 
     <section aria-label="home-section" id="home" class="home">
-      <p class="alert">WEBSITE UNDER MAINTENANCE</p>
       <h1>Hi, I'm Jack</h1>
       <p class="job-description">I specialize in Design, Online Marketing and Website Development with a focus on responsiveness and accesibility</p>
       <p class="job-title">Software Developer | Freelancer</p>
@@ -105,7 +89,7 @@
 
             <h3>Online Marketing</h3>
 
-            <p>With the help of SEO, social medial marketing and Google Ads, I am able to help brands grow and build relationships with their clientele through online marketing platforms.</p>
+            <p>With the help of SEO, socia medial marketing and Google Ads, I am able to help brands grow and build relationships with their clientele through online marketing platforms.</p>
 
             <a class="marketing__btn" href="marketing.html" target="_blank">View Service</a>
           </div>
@@ -152,16 +136,18 @@
           </div>
   
           <div class="project_4">
-              <img src="Assets/desktop-design.jpg" alt="tip-active-states">
+              <img src="Assets/theme-switcher.jpg" alt="tip-active-states">
   
-              <p>Advice Generator</p>
+              <p>Theme Switcher</p>
   
               <div class="btns">
-                <a href="https://jack-webdev.github.io/API_Advice_Generator/" target="_blank" class="live">Live Site</a>
-                <a href="https://github.com/Jack-WebDev/API-Advice-Generator.git" target="_blank" class="view">View Github Repo</a> 
+                <a href="https://jack-webdev.github.io/Theme_Switcher/" target="_blank" class="live">Live Site</a>
+                <a href="https://github.com/Jack-WebDev/Theme_Switchergit" target="_blank" class="view">View Github Repo</a> 
               </div>
           </div>
-      </div>
+
+        </div>
+        <a href="#" class="btn__more">More</a>
     </section>
 
     <section aria-label="contact-section" id="contact" class="contact">

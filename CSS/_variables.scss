@@ -13,6 +13,7 @@
 
 html {
   scroll-padding-top: var(--scroll-padding, 100px);
+  scroll-behavior: smooth;
 }
 
 :root {
