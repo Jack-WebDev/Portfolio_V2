@@ -1591,7 +1591,7 @@ footer .attribution p .signed:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .terms__service .bg-image .bg-img__title {
-  font-size: 3em;
+  font-size: 2em;
   font-family: "Genos", sans-serif;
   font-weight: 500;
   color: var(--defaultColor);
@@ -1599,12 +1599,12 @@ footer .attribution p .signed:hover {
 }
 .terms__service .bg-image .bg-img__title::after {
   content: "";
-  width: 9rem;
+  width: 6rem;
   height: 5px;
   position: absolute;
   background-color: var(--numberColor);
   bottom: 2px;
-  left: -5px;
+  left: -4px;
 }
 .terms__service .design_icon__mobile {
   display: none;
@@ -1719,6 +1719,13 @@ footer .attribution p .signed:hover {
   .terms__service .bg-image {
     width: 100%;
     height: 60vh;
+  }
+  .terms__service .bg-image .bg-img__title {
+    font-size: 3em;
+  }
+  .terms__service .bg-image .bg-img__title::after {
+    width: 9rem;
+    left: -7px;
   }
   .terms__service .design__content-container .design__content h2 {
     text-align: center;
