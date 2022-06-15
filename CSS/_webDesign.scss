@@ -14,7 +14,7 @@
     background-color: rgb(0 0 0 / 0.7);
 
     .bg-img__title {
-      font-size: 3em;
+      font-size: 2em;
       font-family: "Genos", sans-serif;
       font-weight: 500;
       color: var(--defaultColor);
@@ -22,7 +22,7 @@
     }
     .bg-img__title::after {
       content: "";
-      width: 22rem;
+      width: 15rem;
       height: 5px;
       position: absolute;
       background-color: var(--numberColor);
@@ -248,9 +248,16 @@
 
 @media screen and (min-width: 768px) {
   .terms__service {
-    .bg-image {
+    .bg-image__web {
       width: 100%;
       height: 60vh;
+
+      .bg-img__title {
+        font-size: 3em;
+      }
+      .bg-img__title::after {
+        width: 22rem;
+      }
     }
 
     .design__content-container {

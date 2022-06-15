@@ -63,11 +63,6 @@
     box-shadow: 0 0 30px 7px var(--header);
     letter-spacing: 3px;
   }
-
-  .contact__btn:hover {
-    color: var(--numberColor);
-    box-shadow: 0 0 40px 10px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -91,6 +86,11 @@
 
     .job-title {
       font-size: 20px;
+    }
+
+    .contact__btn:hover {
+      color: var(--numberColor);
+      box-shadow: 0 0 40px 10px;
     }
 
   }

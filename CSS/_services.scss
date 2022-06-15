@@ -66,9 +66,7 @@
         text-decoration: none;
         cursor: pointer;
       }
-      .design__btn:hover {
-        transform: scale(1.3);
-      }
+
     }
 
     .web__design {
@@ -109,9 +107,7 @@
         text-decoration: none;
         cursor: pointer;
       }
-      .web-design__btn:hover {
-        transform: scale(1.3);
-      }
+
     }
 
     .online__marketing {
@@ -152,9 +148,7 @@
         text-decoration: none;
         cursor: pointer;
       }
-      .marketing__btn:hover {
-        transform: scale(1.3);
-      }
+
     }
   }
 
@@ -197,6 +191,10 @@
         p {
           max-width: 80vw;
         }
+
+        .design__btn:hover {
+          transform: scale(1.3);
+        }
       }
   
       .web__design {
@@ -206,6 +204,10 @@
         p {
           max-width: 80vw;
         }
+
+        .web-design__btn:hover {
+          transform: scale(1.3);
+        }
       }
   
       .online__marketing {
@@ -214,6 +216,10 @@
   
         p {
           max-width: 80vw;
+        }
+
+        .marketing__btn:hover {
+          transform: scale(1.3);
         }
   
       }

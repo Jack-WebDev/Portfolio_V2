@@ -22,12 +22,10 @@ navLinks.forEach((link) => {
 
 hamburger.addEventListener("click", () => {
   modal.classList.add("active");
-  hamburger.style.display = "none";
 });
 
 closeIcon.addEventListener("click", () => {
   modal.classList.remove("active");
-  hamburger.style.display = "inline-block";
 });
 
 btnMore.addEventListener("click", () => {
