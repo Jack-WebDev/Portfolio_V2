@@ -3,14 +3,13 @@
 .contact {
   margin: 4em 0;
   text-align: center;
-  // padding-top: 5em;
 
   h2 {
     text-align: center;
     color: var(--header);
     font-weight: 300;
     font-size: 35px;
-    font-family: 'Genos', sans-serif;
+    font-family: "Genos", sans-serif;
     padding-bottom: 1em;
     padding-top: 2em;
 
@@ -22,7 +21,7 @@
 
   p {
     padding: 0 2em;
-    font-family: 'Genos', sans-serif;
+    font-family: "Genos", sans-serif;
     color: var(--defaultColor);
     font-size: 20px;
   }
@@ -36,26 +35,16 @@ footer {
 
     .icons {
       a {
-        width: 10%;
-
         img {
-          width: 7%;
           margin-right: 20px;
         }
-
-        .github {
-          filter: var(--invert);
-        }
       }
 
-      .whatsapp {
-        width: 7%;
-      }
       .number {
         position: relative;
         left: 5px;
         top: -9px;
-        font-family: 'Genos', sans-serif;
+        font-family: "Genos", sans-serif;
         color: var(--header);
         font-weight: 900;
       }
@@ -64,7 +53,7 @@ footer {
     p {
       margin-top: 20px;
       color: var(--defaultColor);
-      font-family: 'Genos', sans-serif;
+      font-family: "Genos", sans-serif;
       position: relative;
 
       .signed {
@@ -76,58 +65,26 @@ footer {
         margin-left: 5px;
       }
       .signed:hover {
-        color: var(--numberColor);
+        color: var(--defaultColor);
       }
-      
     }
   }
 }
 
 @media screen and (min-width: 768px) {
   .contact {
-    margin: 4em 0;
-    text-align: center;
-    // padding-top: 5em;
-
     h2 {
-      text-align: center;
-      font-weight: 300;
-      padding-bottom: 1em;
-      padding-top: 2em;
       font-size: 40px;
-
-      span {
-        font-size: 0.8em;
-      }
     }
 
     p {
-      padding: 0 2em;
+      font-size: 22px;
     }
   }
 
   footer {
     .attribution {
-      text-align: center;
-      margin: 1em 0;
-
       .icons {
-        a {
-          width: 10%;
-
-          img {
-            width: 4%;
-            margin-right: 20px;
-          }
-
-          .github {
-            filter: var(--invert);
-          }
-        }
-
-        .whatsapp {
-          width: 4%;
-        }
         .number {
           position: relative;
           left: 5px;
@@ -147,53 +104,8 @@ footer {
 }
 
 @media screen and (min-width: 1100px) {
-  .contact {
-    margin: 4em 0;
-    text-align: center;
-   // padding-top: 5em;
-
-    h2 {
-      text-align: center;
-      font-weight: 300;
-      padding-bottom: 1em;
-      padding-top: 2em;
-
-      span {
-        font-size: 0.8em;
-      }
-    }
-
-    p {
-      padding: 0 2em;
-      font-size: 20px;
-    }
-  }
-
   footer {
     .attribution {
-      text-align: center;
-      margin: 1em 0;
-
-      .icons {
-        a {
-          width: 10%;
-
-          img {
-            width: 3%;
-            margin-right: 20px;
-          }
-        }
-
-        .whatsapp {
-          width: 3%;
-        }
-        .number {
-          position: relative;
-          left: 5px;
-          top: -16px;
-        }
-      }
-
       p {
         margin-top: 30px;
         font-size: 20px;

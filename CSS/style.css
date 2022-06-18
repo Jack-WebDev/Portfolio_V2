@@ -552,10 +552,10 @@ body {
   place-items: center;
 }
 .work .projects .project_1 img, .work .projects .project_4 img, .work .projects .project_3 img, .work .projects .project_2 img {
-  width: 100%;
   transform: scale(0.7);
   transition: transform 500ms ease;
   cursor: pointer;
+  height: auto;
 }
 .work .projects .project_1 img:hover, .work .projects .project_4 img:hover, .work .projects .project_3 img:hover, .work .projects .project_2 img:hover {
   transform: scale(0.9);
@@ -786,7 +786,6 @@ body {
     place-items: center;
   }
   .work .projects .project_1 img, .work .projects .project_2 img, .work .projects .project_3 img, .work .projects .project_4 img {
-    width: 100%;
     transform: scale(0.7);
     transition: transform 500ms ease;
     cursor: pointer;
@@ -833,11 +832,9 @@ body {
     place-items: center;
   }
   .work .projects .project_2 img {
-    width: 100%;
     transform: scale(0.7);
     transition: transform 500ms ease;
     cursor: pointer;
-    height: 45vh;
   }
   .work .projects .project_2 img:hover {
     transform: scale(0.9);
@@ -881,7 +878,6 @@ body {
     place-items: center;
   }
   .work .projects .project_3 img {
-    width: 100%;
     transform: scale(0.7);
     transition: transform 500ms ease;
     cursor: pointer;
@@ -928,11 +924,9 @@ body {
     place-items: center;
   }
   .work .projects .project_4 img {
-    width: 100%;
     transform: scale(0.7);
     transition: transform 500ms ease;
     cursor: pointer;
-    height: 43vh;
   }
   .work .projects .project_4 img:hover {
     transform: scale(0.9);
@@ -1105,11 +1099,9 @@ body {
     place-items: center;
   }
   .work .projects .project_2 img {
-    width: 100%;
     transform: scale(0.7);
     transition: transform 500ms ease;
     cursor: pointer;
-    height: 58vh;
   }
   .work .projects .project_2 img:hover {
     transform: scale(0.9);
@@ -1153,11 +1145,9 @@ body {
     place-items: center;
   }
   .work .projects .project_4 img {
-    width: 100%;
     transform: scale(0.7);
     transition: transform 500ms ease;
     cursor: pointer;
-    height: 58vh;
   }
   .work .projects .project_4 img:hover {
     transform: scale(0.9);
@@ -1300,11 +1290,9 @@ body {
     place-items: center;
   }
   .work .projects .project_2 img {
-    width: 100%;
     transform: scale(0.7);
     transition: transform 500ms ease;
     cursor: pointer;
-    height: 74vh;
   }
   .work .projects .project_2 img:hover {
     transform: scale(0.9);
@@ -1348,11 +1336,9 @@ body {
     place-items: center;
   }
   .work .projects .project_4 img {
-    width: 100%;
     transform: scale(0.7);
     transition: transform 500ms ease;
     cursor: pointer;
-    height: 73vh;
   }
   .work .projects .project_4 img:hover {
     transform: scale(0.9);
@@ -1448,18 +1434,8 @@ footer .attribution {
   margin: 1em 0;
   padding-bottom: 2em;
 }
-footer .attribution .icons a {
-  width: 10%;
-}
 footer .attribution .icons a img {
-  width: 7%;
   margin-right: 20px;
-}
-footer .attribution .icons a .github {
-  filter: var(--invert);
-}
-footer .attribution .icons .whatsapp {
-  width: 7%;
 }
 footer .attribution .icons .number {
   position: relative;
@@ -1484,45 +1460,17 @@ footer .attribution p .signed {
   margin-left: 5px;
 }
 footer .attribution p .signed:hover {
-  color: var(--numberColor);
+  color: var(--defaultColor);
 }
 
 @media screen and (min-width: 768px) {
-  .contact {
-    margin: 4em 0;
-    text-align: center;
-  }
   .contact h2 {
-    text-align: center;
-    font-weight: 300;
-    padding-bottom: 1em;
-    padding-top: 2em;
     font-size: 40px;
   }
-  .contact h2 span {
-    font-size: 0.8em;
-  }
   .contact p {
-    padding: 0 2em;
+    font-size: 22px;
   }
 
-  footer .attribution {
-    text-align: center;
-    margin: 1em 0;
-  }
-  footer .attribution .icons a {
-    width: 10%;
-  }
-  footer .attribution .icons a img {
-    width: 4%;
-    margin-right: 20px;
-  }
-  footer .attribution .icons a .github {
-    filter: var(--invert);
-  }
-  footer .attribution .icons .whatsapp {
-    width: 4%;
-  }
   footer .attribution .icons .number {
     position: relative;
     left: 5px;
@@ -1536,43 +1484,6 @@ footer .attribution p .signed:hover {
   }
 }
 @media screen and (min-width: 1100px) {
-  .contact {
-    margin: 4em 0;
-    text-align: center;
-  }
-  .contact h2 {
-    text-align: center;
-    font-weight: 300;
-    padding-bottom: 1em;
-    padding-top: 2em;
-  }
-  .contact h2 span {
-    font-size: 0.8em;
-  }
-  .contact p {
-    padding: 0 2em;
-    font-size: 20px;
-  }
-
-  footer .attribution {
-    text-align: center;
-    margin: 1em 0;
-  }
-  footer .attribution .icons a {
-    width: 10%;
-  }
-  footer .attribution .icons a img {
-    width: 3%;
-    margin-right: 20px;
-  }
-  footer .attribution .icons .whatsapp {
-    width: 3%;
-  }
-  footer .attribution .icons .number {
-    position: relative;
-    left: 5px;
-    top: -16px;
-  }
   footer .attribution p {
     margin-top: 30px;
     font-size: 20px;
@@ -1713,6 +1624,9 @@ footer .attribution p .signed:hover {
   text-decoration: none;
   font-size: 20px;
   margin-left: 5px;
+}
+.design__footer .details .attribution .signed:hover {
+  color: var(--defaultColor);
 }
 
 @media screen and (min-width: 768px) {
@@ -1911,12 +1825,6 @@ footer .attribution p .signed:hover {
     justify-content: center;
     align-items: baseline;
     grid-template-columns: 1fr 1fr;
-  }
-  .work .projects .project_2 img {
-    height: auto;
-  }
-  .work .projects .project_4 img {
-    height: auto;
   }
 }
 .design__footer {

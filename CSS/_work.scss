@@ -40,10 +40,10 @@
       place-items: center;
 
       img {
-        width: 100%;
         transform: scale(0.7);
         transition: transform 500ms ease;
         cursor: pointer;
+        height: auto;
       }
       img:hover {
         transform: scale(0.9);
@@ -300,7 +300,6 @@
         place-items: center;
 
         img {
-          width: 100%;
           transform: scale(0.7);
           transition: transform 500ms ease;
           cursor: pointer;
@@ -353,11 +352,9 @@
         place-items: center;
 
         img {
-          width: 100%;
           transform: scale(0.7);
           transition: transform 500ms ease;
           cursor: pointer;
-          height: 45vh;
         }
         img:hover {
           transform: scale(0.9);
@@ -407,7 +404,6 @@
         place-items: center;
 
         img {
-          width: 100%;
           transform: scale(0.7);
           transition: transform 500ms ease;
           cursor: pointer;
@@ -460,11 +456,9 @@
         place-items: center;
 
         img {
-          width: 100%;
           transform: scale(0.7);
           transition: transform 500ms ease;
           cursor: pointer;
-          height: 43vh;
         }
         img:hover {
           transform: scale(0.9);
@@ -655,11 +649,9 @@
         place-items: center;
 
         img {
-          width: 100%;
           transform: scale(0.7);
           transition: transform 500ms ease;
           cursor: pointer;
-          height: 58vh;
         }
         img:hover {
           transform: scale(0.9);
@@ -709,11 +701,9 @@
         place-items: center;
 
         img {
-          width: 100%;
           transform: scale(0.7);
           transition: transform 500ms ease;
           cursor: pointer;
-          height: 58vh;
         }
         img:hover {
           transform: scale(0.9);
@@ -873,11 +863,9 @@
         place-items: center;
 
         img {
-          width: 100%;
           transform: scale(0.7);
           transition: transform 500ms ease;
           cursor: pointer;
-          height: 74vh;
         }
         img:hover {
           transform: scale(0.9);
@@ -927,11 +915,9 @@
         place-items: center;
 
         img {
-          width: 100%;
           transform: scale(0.7);
           transition: transform 500ms ease;
           cursor: pointer;
-          height: 73vh;
         }
         img:hover {
           transform: scale(0.9);
